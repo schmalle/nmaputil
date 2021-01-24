@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Sat Jan 23 21:41:57 2021 as: nmap -sS -A -iL targets.txt -oX targets.xml -->
+<nmaprun scanner="nmap" args="nmap -sS -A -iL targets.txt -oX targets.xml" start="1611434517" startstr="Sat Jan 23 21:41:57 2021" version="7.91" xmloutputversion="1.05">
+  <scaninfo type="syn" protocol="tcp" numservices="1000" services="1,3-4,6-7,9,13,17,19-26,30,32-33,37,42-43,49,53,70,79-85,88-90,99-100,106,109-111,113,119,125,135,139,143-144,146,161,163,179,199,211-212,222,254-256,259,264,280,301,306,311,340,366,389,406-407,416-417,425,427,443-445,458,464-465,481,497,500,512-515,524,541,543-545,548,554-555,563,587,593,616-617,625,631,636,646,648,666-668,683,687,691,700,705,711,714,720,722,726,749,765,777,783,787,800-801,808,843,873,880,888,898,900-903,911-912,981,987,990,992-993,995,999-1002,1007,1009-1011,1021-1100,1102,1104-1108,1110-1114,1117,1119,1121-1124,1126,1130-1132,1137-1138,1141,1145,1147-1149,1151-1152,1154,1163-1166,1169,1174-1175,1183,1185-1187,1192,1198-1199,1201,1213,1216-1218,1233-1234,1236,1244,1247-1248,1259,1271-1272,1277,1287,1296,1300-1301,1309-1311,1322,1328,1334,1352,1417,1433-1434,1443,1455,1461,1494,1500-1501,1503,1521,1524,1533,1556,1580,1583,1594,1600,1641,1658,1666,1687-1688,1700,1717-1721,1723,1755,1761,1782-1783,1801,1805,1812,1839-1840,1862-1864,1875,1900,1914,1935,1947,1971-1972,1974,1984,1998-2010,2013,2020-2022,2030,2033-2035,2038,2040-2043,2045-2049,2065,2068,2099-2100,2103,2105-2107,2111,2119,2121,2126,2135,2144,2160-2161,2170,2179,2190-2191,2196,2200,2222,2251,2260,2288,2301,2323,2366,2381-2383,2393-2394,2399,2401,2492,2500,2522,2525,2557,2601-2602,2604-2605,2607-2608,2638,2701-2702,2710,2717-2718,2725,2800,2809,2811,2869,2875,2909-2910,2920,2967-2968,2998,3000-3001,3003,3005-3007,3011,3013,3017,3030-3031,3052,3071,3077,3128,3168,3211,3221,3260-3261,3268-3269,3283,3300-3301,3306,3322-3325,3333,3351,3367,3369-3372,3389-3390,3404,3476,3493,3517,3527,3546,3551,3580,3659,3689-3690,3703,3737,3766,3784,3800-3801,3809,3814,3826-3828,3851,3869,3871,3878,3880,3889,3905,3914,3918,3920,3945,3971,3986,3995,3998,4000-4006,4045,4111,4125-4126,4129,4224,4242,4279,4321,4343,4443-4446,4449,4550,4567,4662,4848,4899-4900,4998,5000-5004,5009,5030,5033,5050-5051,5054,5060-5061,5080,5087,5100-5102,5120,5190,5200,5214,5221-5222,5225-5226,5269,5280,5298,5357,5405,5414,5431-5432,5440,5500,5510,5544,5550,5555,5560,5566,5631,5633,5666,5678-5679,5718,5730,5800-5802,5810-5811,5815,5822,5825,5850,5859,5862,5877,5900-5904,5906-5907,5910-5911,5915,5922,5925,5950,5952,5959-5963,5987-5989,5998-6007,6009,6025,6059,6100-6101,6106,6112,6123,6129,6156,6346,6389,6502,6510,6543,6547,6565-6567,6580,6646,6666-6669,6689,6692,6699,6779,6788-6789,6792,6839,6881,6901,6969,7000-7002,7004,7007,7019,7025,7070,7100,7103,7106,7200-7201,7402,7435,7443,7496,7512,7625,7627,7676,7741,7777-7778,7800,7911,7920-7921,7937-7938,7999-8002,8007-8011,8021-8022,8031,8042,8045,8080-8090,8093,8099-8100,8180-8181,8192-8194,8200,8222,8254,8290-8292,8300,8333,8383,8400,8402,8443,8500,8600,8649,8651-8652,8654,8701,8800,8873,8888,8899,8994,9000-9003,9009-9011,9040,9050,9071,9080-9081,9090-9091,9099-9103,9110-9111,9200,9207,9220,9290,9415,9418,9485,9500,9502-9503,9535,9575,9593-9595,9618,9666,9876-9878,9898,9900,9917,9929,9943-9944,9968,9998-10004,10009-10010,10012,10024-10025,10082,10180,10215,10243,10566,10616-10617,10621,10626,10628-10629,10778,11110-11111,11967,12000,12174,12265,12345,13456,13722,13782-13783,14000,14238,14441-14442,15000,15002-15004,15660,15742,16000-16001,16012,16016,16018,16080,16113,16992-16993,17877,17988,18040,18101,18988,19101,19283,19315,19350,19780,19801,19842,20000,20005,20031,20221-20222,20828,21571,22939,23502,24444,24800,25734-25735,26214,27000,27352-27353,27355-27356,27715,28201,30000,30718,30951,31038,31337,32768-32785,33354,33899,34571-34573,35500,38292,40193,40911,41511,42510,44176,44442-44443,44501,45100,48080,49152-49161,49163,49165,49167,49175-49176,49400,49999-50003,50006,50300,50389,50500,50636,50800,51103,51493,52673,52822,52848,52869,54045,54328,55055-55056,55555,55600,56737-56738,57294,57797,58080,60020,60443,61532,61900,62078,63331,64623,64680,65000,65129,65389"/>
+  <verbose level="0"/>
+  <debugging level="0"/>
+  <hosthint>
+    <status state="up" reason="unknown-response" reason_ttl="0"/>
+    <address addr="213.203.220.200" addrtype="ipv4"/>
+    <hostnames>
+      <hostname name="www.covestro.com" type="user"/>
+    </hostnames>
+  </hosthint>
+  <hosthint>
+    <status state="up" reason="unknown-response" reason_ttl="0"/>
+    <address addr="128.65.210.182" addrtype="ipv4"/>
+    <hostnames>
+      <hostname name="www.spiegel.de" type="user"/>
+    </hostnames>
+  </hosthint>
+  <host starttime="1611434518" endtime="1611434694">
+    <status state="up" reason="echo-reply" reason_ttl="247"/>
+    <address addr="213.203.220.200" addrtype="ipv4"/>
+    <hostnames>
+      <hostname name="www.covestro.com" type="user"/>
+      <hostname name="covestro-cds.covestro.com" type="PTR"/>
+    </hostnames>
+    <ports>
+      <extraports state="filtered" count="997">
+        <extrareasons reason="no-responses" count="997"/>
+      </extraports>
+      <port protocol="tcp" portid="80">
+        <state state="open" reason="syn-ack" reason_ttl="56"/>
+        <service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10">
+          <cpe>cpe:/o:microsoft:windows</cpe>
+        </service>
+        <script id="http-server-header" output="&#xa;  Microsoft-HTTPAPI/2.0&#xa;  Microsoft-IIS/10.0">
+          <elem>Microsoft-HTTPAPI/2.0</elem>
+          <elem>Microsoft-IIS/10.0</elem>
+        </script>
+        <script id="http-title" output="Did not follow redirect to https://www.covestro.com/">
+          <elem key="redirect_url">https://www.covestro.com/</elem>
+        </script>
+      </port>
+      <port protocol="tcp" portid="113">
+        <state state="closed" reason="reset" reason_ttl="56"/>
+        <service name="ident" method="table" conf="3"/>
+      </port>
+      <port protocol="tcp" portid="443">
+        <state state="open" reason="syn-ack" reason_ttl="56"/>
+        <service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" tunnel="ssl" method="probed" conf="10">
+          <cpe>cpe:/o:microsoft:windows</cpe>
+        </service>
+        <script id="http-robots.txt" output="83 disallowed entries (15 shown)&#xa;/sitecore/ /bin/ /layouts/ /App_Data /App_Browsers &#xa;/App_Config /Areas /Artifacts /aspnet_client /assets /download &#xa;/mobile /sitecore modules /sitecore_files /temp"/>
+        <script id="http-server-header" output="&#xa;  Microsoft-HTTPAPI/2.0&#xa;  Microsoft-IIS/10.0">
+          <elem>Microsoft-HTTPAPI/2.0</elem>
+          <elem>Microsoft-IIS/10.0</elem>
+        </script>
+        <script id="http-title" output="Covestro \xE2\x80\x93 A leader in polymer solutions">
+          <elem key="title">Covestro \xE2\x80\x93 A leader in polymer solutions</elem>
+        </script>
+        <script id="ssl-cert" output="Subject: commonName=www.covestro.com/organizationName=Covestro Deutschland AG/stateOrProvinceName=North Rhine-Westphalia/countryName=DE&#xa;Subject Alternative Name: DNS:www.covestro.com, DNS:c3.covestro.com, DNS:career.covestro.be, DNS:career.covestro.ch, DNS:career.covestro.cn, DNS:career.covestro.co.th, DNS:career.covestro.com, DNS:career.covestro.com.br, DNS:career.covestro.de, DNS:career.covestro.dk, DNS:career.covestro.es, DNS:career.covestro.fr, DNS:career.covestro.hk, DNS:career.covestro.in, DNS:career.covestro.it, DNS:career.covestro.jp, DNS:career.covestro.kr, DNS:career.covestro.mx, DNS:career.covestro.ru, DNS:career.covestro.sg, DNS:career.covestro.sk, DNS:career.covestro.tw, DNS:career.covestro.us, DNS:career.covestro.vn, DNS:cm.covestro.com, DNS:contentplaybook.covestro.com, DNS:countries.covestro.com, DNS:covestro.be, DNS:covestro.cn, DNS:covestro.com, DNS:covestro.com.au, DNS:covestro.de, DNS:covestro.dk, DNS:covestro.es, DNS:covestro.in, DNS:covestro.it, DNS:covestro.jp, DNS:covestro.ru, DNS:covestro.tw, DNS:covestro.us, DNS:ecm.covestro.com, DNS:elastomers.covestro.com, DNS:investor.covestro.com, DNS:lp.covestro.com, DNS:pearl.covestro.ae, DNS:press.covestro.com, DNS:presse.covestro.de, DNS:preview.covestro.com, DNS:products.covestro.com, DNS:productsafetyfirst.covestro.cn, DNS:productsafetyfirst.covestro.com, DNS:pushingboundaries.covestro.com, DNS:qa.covestro.com, DNS:www.c3.covestro.com, DNS:www.career.covestro.be, DNS:www.career.covestro.ch, DNS:www.career.covestro.cn, DNS:www.career.covestro.co.th, DNS:www.career.covestro.com, DNS:www.career.covestro.com.br, DNS:www.career.covestro.de, DNS:www.career.covestro.dk, DNS:www.career.covestro.es, DNS:www.career.covestro.fr, DNS:www.career.covestro.hk, DNS:www.career.covestro.in, DNS:www.career.covestro.it, DNS:www.career.covestro.jp, DNS:www.career.covestro.kr, DNS:www.career.covestro.mx, DNS:www.career.covestro.ru, DNS:www.career.covestro.sg, DNS:www.career.covestro.sk, DNS:www.career.covestro.tw, DNS:www.career.covestro.us, DNS:www.career.covestro.vn, DNS:www.contentguide.covestro.com, DNS:www.contentplaybook.covestro.com, DNS:www.countries.covestro.com, DNS:www.covestro.be, DNS:www.covestro.cn, DNS:www.covestro.co.th, DNS:www.covestro.com.au, DNS:www.covestro.de, DNS:www.covestro.dk, DNS:www.covestro.es, DNS:www.covestro.in, DNS:www.covestro.it, DNS:www.covestro.jp, DNS:www.covestro.ru, DNS:www.covestro.tw, DNS:www.covestro.us, DNS:www.ecm.covestro.com, DNS:www.investor.covestro.com, DNS:www.lp.covestro.com, DNS:www.pearl.covestro.ae, DNS:www.products.covestro.com, DNS:www.productsafetyfirst.covestro.cn, DNS:www.productsafetyfirst.covestro.com, DNS:www.pushingboundaries.covestro.com&#xa;Not valid before: 2020-05-04T00:00:00&#xa;Not valid after:  2021-08-26T23:59:59">
+          <table key="subject">
+            <elem key="commonName">www.covestro.com</elem>
+            <elem key="countryName">DE</elem>
+            <elem key="localityName">Leverkusen</elem>
+            <elem key="organizationName">Covestro Deutschland AG</elem>
+            <elem key="organizationalUnitName">Covestro AG</elem>
+            <elem key="postalCode">51373</elem>
+            <elem key="stateOrProvinceName">North Rhine-Westphalia</elem>
+            <elem key="streetAddress">Kaiser-Wilhelm-Allee 60</elem>
+          </table>
+          <table key="issuer">
+            <elem key="commonName">Trusted Secure Certificate Authority 5</elem>
+            <elem key="countryName">US</elem>
+            <elem key="localityName">Wilmington</elem>
+            <elem key="organizationName">Corporation Service Company</elem>
+            <elem key="stateOrProvinceName">DE</elem>
+          </table>
+          <table key="pubkey">
+            <elem key="type">rsa</elem>
+            <elem key="bits">2048</elem>
+            <elem key="modulus">B1F679D9E584A83AC26EC8261130EAEA8FE964B9AE62252CE9FB78EBF46F313FCCC771A39275EAA02099670AFEE579B7932366DB63333A8391B9395F6F60A220DB97CD01327DB90D491BD4011DA6CCE3B5BD7E14BE7B4E2ED1BBCDB3D0B5AE30145AFEC7C1EC125A07EA76B68518303A493CAF2A264B7AF6B00AC6FB6BA3376CB9844A37AA14B6CD0FC7119E8BD7DA957D668F4D5DE3C2969A7B5C5DCB5F559CD722AEA672147B976CE9AD505262185FF4C4A4DEBB7A2971FEBFD51DC6947C6720D76F488B08C146B582AE5B074AD640EFFFF8EEAF70254170592EEB9AE6A6B9B1AB75C838DD5A9BA7216C13943C95AD2F44AF7B0CB4BAA0C98B868CC2B32A01</elem>
+            <elem key="exponent">65537</elem>
+          </table>
+          <table key="extensions">
+            <table>
+              <elem key="name">X509v3 Authority Key Identifier</elem>
+              <elem key="value">keyid:F2:BB:55:EE:FC:8F:CF:D0:3F:14:68:1A:95:7E:79:0E:AB:17:30:F4&#xa;</elem>
+            </table>
+            <table>
+              <elem key="name">X509v3 Subject Key Identifier</elem>
+              <elem key="value">37:B7:4A:F2:32:43:3C:0A:C6:EA:83:87:25:9A:79:16:AD:16:7C:03</elem>
+            </table>
+            <table>
+              <elem key="name">X509v3 Key Usage</elem>
+              <elem key="value">Digital Signature, Key Encipherment</elem>
+              <elem key="critical">true</elem>
+            </table>
+            <table>
+              <elem key="name">X509v3 Basic Constraints</elem>
+              <elem key="value">CA:FALSE</elem>
+              <elem key="critical">true</elem>
+            </table>
+            <table>
+              <elem key="name">X509v3 Extended Key Usage</elem>
+              <elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+            </table>
+            <table>
+              <elem key="name">X509v3 Certificate Policies</elem>
+              <elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.8&#xa;  CPS: https://cps.usertrust.com&#xa;Policy: 2.23.140.1.2.2&#xa;</elem>
+            </table>
+            <table>
+              <elem key="name">X509v3 CRL Distribution Points</elem>
+              <elem key="value">&#xa;Full Name:&#xa;  URI:http://crl.usertrust.com/TrustedSecureCertificateAuthority5.crl&#xa;</elem>
+            </table>
+            <table>
+              <elem key="name">Authority Information Access</elem>
+              <elem key="value">CA Issuers - URI:http://crt.usertrust.com/TrustedSecureCertificateAuthority5.crt&#xa;OCSP - URI:http://ocsp.usertrust.com&#xa;</elem>
+            </table>
+            <table>
+              <elem key="name">CT Precertificate SCTs</elem>
+              <elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 7D:3E:F2:F8:8F:FF:88:55:68:24:C2:C0:CA:9E:52:89:&#xa;                79:2B:C5:0E:78:09:7F:2E:6A:97:68:99:7E:22:F0:D7&#xa;    Timestamp : May  4 07:53:30.452 2020 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:06:89:97:CF:14:74:0F:6B:E2:2E:33:0C:&#xa;                4F:B8:4F:82:37:95:1C:AB:10:98:D7:71:98:24:6B:DC:&#xa;                FA:DF:73:0A:02:21:00:F7:E4:AF:78:DA:38:3B:EB:94:&#xa;                3C:02:18:42:89:90:C4:BD:15:FB:96:B5:1D:69:48:D2:&#xa;                AB:E6:62:0E:B2:62:A5&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 94:20:BC:1E:8E:D5:8D:6C:88:73:1F:82:8B:22:2C:0D:&#xa;                D1:DA:4D:5E:6C:4F:94:3D:61:DB:4E:2F:58:4D:A2:C2&#xa;    Timestamp : May  4 07:53:30.746 2020 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:92:69:FB:7D:89:A7:65:80:A8:2A:5A:&#xa;                ED:AE:41:DA:60:06:FF:68:84:43:3D:09:64:4D:21:90:&#xa;                31:E9:12:65:11:02:21:00:E3:A7:3F:AC:A2:05:FA:95:&#xa;                F5:34:FD:99:DA:4D:43:4C:19:CE:50:A3:AC:B6:23:A2:&#xa;                8E:F7:C3:DE:F7:26:4A:30&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 6F:53:76:AC:31:F0:31:19:D8:99:00:A4:51:15:FF:77:&#xa;                15:1C:11:D9:02:C1:00:29:06:8D:B2:08:9A:37:D9:13&#xa;    Timestamp : May  4 07:53:30.613 2020 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:90:B9:E7:94:32:40:BF:67:19:32:5F:&#xa;                E5:36:1D:ED:6C:36:2A:E8:99:89:C6:DF:39:19:CE:5E:&#xa;                E9:DB:36:2E:18:02:20:07:7C:1B:7C:FF:DB:B6:0A:84:&#xa;                AC:13:D8:02:5C:33:F1:71:DA:A2:4C:D5:41:24:4A:3A:&#xa;                EE:39:09:9E:B6:77:E7</elem>
+            </table>
+            <table>
+              <elem key="name">X509v3 Subject Alternative Name</elem>
+              <elem key="value">DNS:www.covestro.com, DNS:c3.covestro.com, DNS:career.covestro.be, DNS:career.covestro.ch, DNS:career.covestro.cn, DNS:career.covestro.co.th, DNS:career.covestro.com, DNS:career.covestro.com.br, DNS:career.covestro.de, DNS:career.covestro.dk, DNS:career.covestro.es, DNS:career.covestro.fr, DNS:career.covestro.hk, DNS:career.covestro.in, DNS:career.covestro.it, DNS:career.covestro.jp, DNS:career.covestro.kr, DNS:career.covestro.mx, DNS:career.covestro.ru, DNS:career.covestro.sg, DNS:career.covestro.sk, DNS:career.covestro.tw, DNS:career.covestro.us, DNS:career.covestro.vn, DNS:cm.covestro.com, DNS:contentplaybook.covestro.com, DNS:countries.covestro.com, DNS:covestro.be, DNS:covestro.cn, DNS:covestro.com, DNS:covestro.com.au, DNS:covestro.de, DNS:covestro.dk, DNS:covestro.es, DNS:covestro.in, DNS:covestro.it, DNS:covestro.jp, DNS:covestro.ru, DNS:covestro.tw, DNS:covestro.us, DNS:ecm.covestro.com, DNS:elastomers.covestro.com, DNS:investor.covestro.com, DNS:lp.covestro.com, DNS:pearl.covestro.ae, DNS:press.covestro.com, DNS:presse.covestro.de, DNS:preview.covestro.com, DNS:products.covestro.com, DNS:productsafetyfirst.covestro.cn, DNS:productsafetyfirst.covestro.com, DNS:pushingboundaries.covestro.com, DNS:qa.covestro.com, DNS:www.c3.covestro.com, DNS:www.career.covestro.be, DNS:www.career.covestro.ch, DNS:www.career.covestro.cn, DNS:www.career.covestro.co.th, DNS:www.career.covestro.com, DNS:www.career.covestro.com.br, DNS:www.career.covestro.de, DNS:www.career.covestro.dk, DNS:www.career.covestro.es, DNS:www.career.covestro.fr, DNS:www.career.covestro.hk, DNS:www.career.covestro.in, DNS:www.career.covestro.it, DNS:www.career.covestro.jp, DNS:www.career.covestro.kr, DNS:www.career.covestro.mx, DNS:www.career.covestro.ru, DNS:www.career.covestro.sg, DNS:www.career.covestro.sk, DNS:www.career.covestro.tw, DNS:www.career.covestro.us, DNS:www.career.covestro.vn, DNS:www.contentguide.covestro.com, DNS:www.contentplaybook.covestro.com, DNS:www.countries.covestro.com, DNS:www.covestro.be, DNS:www.covestro.cn, DNS:www.covestro.co.th, DNS:www.covestro.com.au, DNS:www.covestro.de, DNS:www.covestro.dk, DNS:www.covestro.es, DNS:www.covestro.in, DNS:www.covestro.it, DNS:www.covestro.jp, DNS:www.covestro.ru, DNS:www.covestro.tw, DNS:www.covestro.us, DNS:www.ecm.covestro.com, DNS:www.investor.covestro.com, DNS:www.lp.covestro.com, DNS:www.pearl.covestro.ae, DNS:www.products.covestro.com, DNS:www.productsafetyfirst.covestro.cn, DNS:www.productsafetyfirst.covestro.com, DNS:www.pushingboundaries.covestro.com</elem>
+            </table>
+          </table>
+          <elem key="sig_algo">sha256WithRSAEncryption</elem>
+          <table key="validity">
+            <elem key="notBefore">2020-05-04T00:00:00</elem>
+            <elem key="notAfter">2021-08-26T23:59:59</elem>
+          </table>
+          <elem key="md5">f43ca41b1883ba45da9e53372fc4aecf</elem>
+          <elem key="sha1">0276a846558843a7daa57ea8249b576a31cac823</elem>
+          <elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIPbTCCDlWgAwIBAgIQBp14un12OrZMYNe7fjBDKDANBgkqhkiG9w0BAQsFADCB&#xa;hjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkRFMRMwEQYDVQQHEwpXaWxtaW5ndG9u&#xa;MSQwIgYDVQQKExtDb3Jwb3JhdGlvbiBTZXJ2aWNlIENvbXBhbnkxLzAtBgNVBAMT&#xa;JlRydXN0ZWQgU2VjdXJlIENlcnRpZmljYXRlIEF1dGhvcml0eSA1MB4XDTIwMDUw&#xa;NDAwMDAwMFoXDTIxMDgyNjIzNTk1OVowgcgxCzAJBgNVBAYTAkRFMQ4wDAYDVQQR&#xa;EwU1MTM3MzEfMB0GA1UECBMWTm9ydGggUmhpbmUtV2VzdHBoYWxpYTETMBEGA1UE&#xa;BxMKTGV2ZXJrdXNlbjEgMB4GA1UECRMXS2Fpc2VyLVdpbGhlbG0tQWxsZWUgNjAx&#xa;IDAeBgNVBAoTF0NvdmVzdHJvIERldXRzY2hsYW5kIEFHMRQwEgYDVQQLEwtDb3Zl&#xa;c3RybyBBRzEZMBcGA1UEAxMQd3d3LmNvdmVzdHJvLmNvbTCCASIwDQYJKoZIhvcN&#xa;AQEBBQADggEPADCCAQoCggEBALH2ednlhKg6wm7IJhEw6uqP6WS5rmIlLOn7eOv0&#xa;bzE/zMdxo5J16qAgmWcK/uV5t5MjZttjMzqDkbk5X29goiDbl80BMn25DUkb1AEd&#xa;pszjtb1+FL57Ti7Ru82z0LWuMBRa/sfB7BJaB+p2toUYMDpJPK8qJkt69rAKxvtr&#xa;ozdsuYRKN6oUts0PxxGei9falX1mj01d48KWmntcXctfVZzXIq6mchR7l2zprVBS&#xa;Yhhf9MSk3rt6KXH+v9UdxpR8ZyDXb0iLCMFGtYKuWwdK1kDv//jur3AlQXBZLuua&#xa;5qa5sat1yDjdWpunIWwTlDyVrS9Er3sMtLqgyYuGjMKzKgECAwEAAaOCC5EwgguN&#xa;MB8GA1UdIwQYMBaAFPK7Ve78j8/QPxRoGpV+eQ6rFzD0MB0GA1UdDgQWBBQ3t0ry&#xa;MkM8Csbqg4clmnkWrRZ8AzAOBgNVHQ8BAf8EBAMCBaAwDAYDVR0TAQH/BAIwADAd&#xa;BgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwSwYDVR0gBEQwQjA2BgsrBgEE&#xa;AbIxAQICCDAnMCUGCCsGAQUFBwIBFhlodHRwczovL2Nwcy51c2VydHJ1c3QuY29t&#xa;MAgGBmeBDAECAjBQBgNVHR8ESTBHMEWgQ6BBhj9odHRwOi8vY3JsLnVzZXJ0cnVz&#xa;dC5jb20vVHJ1c3RlZFNlY3VyZUNlcnRpZmljYXRlQXV0aG9yaXR5NS5jcmwwgYIG&#xa;CCsGAQUFBwEBBHYwdDBLBggrBgEFBQcwAoY/aHR0cDovL2NydC51c2VydHJ1c3Qu&#xa;Y29tL1RydXN0ZWRTZWN1cmVDZXJ0aWZpY2F0ZUF1dGhvcml0eTUuY3J0MCUGCCsG&#xa;AQUFBzABhhlodHRwOi8vb2NzcC51c2VydHJ1c3QuY29tMIIBfwYKKwYBBAHWeQIE&#xa;AgSCAW8EggFrAWkAdgB9PvL4j/+IVWgkwsDKnlKJeSvFDngJfy5ql2iZfiLw1wAA&#xa;AXHerPpUAAAEAwBHMEUCIAaJl88UdA9r4i4zDE+4T4I3lRyrEJjXcZgka9z633MK&#xa;AiEA9+SveNo4O+uUPAIYQomQxL0V+5a1HWlI0qvmYg6yYqUAdwCUILwejtWNbIhz&#xa;H4KLIiwN0dpNXmxPlD1h204vWE2iwgAAAXHerPt6AAAEAwBIMEYCIQCSaft9iadl&#xa;gKgqWu2uQdpgBv9ohEM9CWRNIZAx6RJlEQIhAOOnP6yiBfqV9TT9mdpNQ0wZzlCj&#xa;rLYjoo73w973JkowAHYAb1N2rDHwMRnYmQCkURX/dxUcEdkCwQApBo2yCJo32RMA&#xa;AAFx3qz69QAABAMARzBFAiEAkLnnlDJAv2cZMl/lNh3tbDYq6JmJxt85Gc5e6ds2&#xa;LhgCIAd8G3z/27YKhKwT2AJcM/Fx2qJM1UEkSjruOQmetnfnMIIIZQYDVR0RBIII&#xa;XDCCCFiCEHd3dy5jb3Zlc3Ryby5jb22CD2MzLmNvdmVzdHJvLmNvbYISY2FyZWVy&#xa;LmNvdmVzdHJvLmJlghJjYXJlZXIuY292ZXN0cm8uY2iCEmNhcmVlci5jb3Zlc3Ry&#xa;by5jboIVY2FyZWVyLmNvdmVzdHJvLmNvLnRoghNjYXJlZXIuY292ZXN0cm8uY29t&#xa;ghZjYXJlZXIuY292ZXN0cm8uY29tLmJyghJjYXJlZXIuY292ZXN0cm8uZGWCEmNh&#xa;cmVlci5jb3Zlc3Ryby5ka4ISY2FyZWVyLmNvdmVzdHJvLmVzghJjYXJlZXIuY292&#xa;ZXN0cm8uZnKCEmNhcmVlci5jb3Zlc3Ryby5oa4ISY2FyZWVyLmNvdmVzdHJvLmlu&#xa;ghJjYXJlZXIuY292ZXN0cm8uaXSCEmNhcmVlci5jb3Zlc3Ryby5qcIISY2FyZWVy&#xa;LmNvdmVzdHJvLmtyghJjYXJlZXIuY292ZXN0cm8ubXiCEmNhcmVlci5jb3Zlc3Ry&#xa;by5ydYISY2FyZWVyLmNvdmVzdHJvLnNnghJjYXJlZXIuY292ZXN0cm8uc2uCEmNh&#xa;cmVlci5jb3Zlc3Ryby50d4ISY2FyZWVyLmNvdmVzdHJvLnVzghJjYXJlZXIuY292&#xa;ZXN0cm8udm6CD2NtLmNvdmVzdHJvLmNvbYIcY29udGVudHBsYXlib29rLmNvdmVz&#xa;dHJvLmNvbYIWY291bnRyaWVzLmNvdmVzdHJvLmNvbYILY292ZXN0cm8uYmWCC2Nv&#xa;dmVzdHJvLmNuggxjb3Zlc3Ryby5jb22CD2NvdmVzdHJvLmNvbS5hdYILY292ZXN0&#xa;cm8uZGWCC2NvdmVzdHJvLmRrggtjb3Zlc3Ryby5lc4ILY292ZXN0cm8uaW6CC2Nv&#xa;dmVzdHJvLml0ggtjb3Zlc3Ryby5qcIILY292ZXN0cm8ucnWCC2NvdmVzdHJvLnR3&#xa;ggtjb3Zlc3Ryby51c4IQZWNtLmNvdmVzdHJvLmNvbYIXZWxhc3RvbWVycy5jb3Zl&#xa;c3Ryby5jb22CFWludmVzdG9yLmNvdmVzdHJvLmNvbYIPbHAuY292ZXN0cm8uY29t&#xa;ghFwZWFybC5jb3Zlc3Ryby5hZYIScHJlc3MuY292ZXN0cm8uY29tghJwcmVzc2Uu&#xa;Y292ZXN0cm8uZGWCFHByZXZpZXcuY292ZXN0cm8uY29tghVwcm9kdWN0cy5jb3Zl&#xa;c3Ryby5jb22CHnByb2R1Y3RzYWZldHlmaXJzdC5jb3Zlc3Ryby5jboIfcHJvZHVj&#xa;dHNhZmV0eWZpcnN0LmNvdmVzdHJvLmNvbYIecHVzaGluZ2JvdW5kYXJpZXMuY292&#xa;ZXN0cm8uY29tgg9xYS5jb3Zlc3Ryby5jb22CE3d3dy5jMy5jb3Zlc3Ryby5jb22C&#xa;Fnd3dy5jYXJlZXIuY292ZXN0cm8uYmWCFnd3dy5jYXJlZXIuY292ZXN0cm8uY2iC&#xa;Fnd3dy5jYXJlZXIuY292ZXN0cm8uY26CGXd3dy5jYXJlZXIuY292ZXN0cm8uY28u&#xa;dGiCF3d3dy5jYXJlZXIuY292ZXN0cm8uY29tghp3d3cuY2FyZWVyLmNvdmVzdHJv&#xa;LmNvbS5icoIWd3d3LmNhcmVlci5jb3Zlc3Ryby5kZYIWd3d3LmNhcmVlci5jb3Zl&#xa;c3Ryby5ka4IWd3d3LmNhcmVlci5jb3Zlc3Ryby5lc4IWd3d3LmNhcmVlci5jb3Zl&#xa;c3Ryby5mcoIWd3d3LmNhcmVlci5jb3Zlc3Ryby5oa4IWd3d3LmNhcmVlci5jb3Zl&#xa;c3Ryby5pboIWd3d3LmNhcmVlci5jb3Zlc3Ryby5pdIIWd3d3LmNhcmVlci5jb3Zl&#xa;c3Ryby5qcIIWd3d3LmNhcmVlci5jb3Zlc3Ryby5rcoIWd3d3LmNhcmVlci5jb3Zl&#xa;c3Ryby5teIIWd3d3LmNhcmVlci5jb3Zlc3Ryby5ydYIWd3d3LmNhcmVlci5jb3Zl&#xa;c3Ryby5zZ4IWd3d3LmNhcmVlci5jb3Zlc3Ryby5za4IWd3d3LmNhcmVlci5jb3Zl&#xa;c3Ryby50d4IWd3d3LmNhcmVlci5jb3Zlc3Ryby51c4IWd3d3LmNhcmVlci5jb3Zl&#xa;c3Ryby52boIdd3d3LmNvbnRlbnRndWlkZS5jb3Zlc3Ryby5jb22CIHd3dy5jb250&#xa;ZW50cGxheWJvb2suY292ZXN0cm8uY29tghp3d3cuY291bnRyaWVzLmNvdmVzdHJv&#xa;LmNvbYIPd3d3LmNvdmVzdHJvLmJlgg93d3cuY292ZXN0cm8uY26CEnd3dy5jb3Zl&#xa;c3Ryby5jby50aIITd3d3LmNvdmVzdHJvLmNvbS5hdYIPd3d3LmNvdmVzdHJvLmRl&#xa;gg93d3cuY292ZXN0cm8uZGuCD3d3dy5jb3Zlc3Ryby5lc4IPd3d3LmNvdmVzdHJv&#xa;Lmlugg93d3cuY292ZXN0cm8uaXSCD3d3dy5jb3Zlc3Ryby5qcIIPd3d3LmNvdmVz&#xa;dHJvLnJ1gg93d3cuY292ZXN0cm8udHeCD3d3dy5jb3Zlc3Ryby51c4IUd3d3LmVj&#xa;bS5jb3Zlc3Ryby5jb22CGXd3dy5pbnZlc3Rvci5jb3Zlc3Ryby5jb22CE3d3dy5s&#xa;cC5jb3Zlc3Ryby5jb22CFXd3dy5wZWFybC5jb3Zlc3Ryby5hZYIZd3d3LnByb2R1&#xa;Y3RzLmNvdmVzdHJvLmNvbYIid3d3LnByb2R1Y3RzYWZldHlmaXJzdC5jb3Zlc3Ry&#xa;by5jboIjd3d3LnByb2R1Y3RzYWZldHlmaXJzdC5jb3Zlc3Ryby5jb22CInd3dy5w&#xa;dXNoaW5nYm91bmRhcmllcy5jb3Zlc3Ryby5jb20wDQYJKoZIhvcNAQELBQADggEB&#xa;AG3r7DmTHe/JspmGIF2Ple+JMAJ5KV34oPjSbzVAssouKO9IM/JWeJ9xU5gY7lFC&#xa;OlqAdDhQ6bfrFveP0VyfR6GusGOAahCz+MDgVLObY86btdO3IJWEEKdNBvs9MjO1&#xa;2qi7IH4PfYJnL43QlVf86lFAfjyYdSV/kUMiIltz8ohEIXWMgFeg3s5YRItYVds2&#xa;9v9KrU1XmztHDzUw4duzTvsdLQZTsXPGcvn+DzJJyS2/SL2EtIm5vNEOpmEYUIrm&#xa;zSO6DvwWcTArFqFSBLx7l3UuFeJ49gir+48Uby9N4f8kTS3uSFEG0rn5Jxg4im/V&#xa;iH7LsKDBIhxHnDHoV4A/8EI=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+        </script>
+        <script id="ssl-date" output="2021-01-23T20:44:53+00:00; 0s from scanner time.">
+          <elem key="date">2021-01-23T20:44:53+00:00</elem>
+          <elem key="delta">0.0</elem>
+        </script>
+        <script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1">
+          <elem>h2</elem>
+          <elem>http/1.1</elem>
+        </script>
+      </port>
+    </ports>
+    <os>
+      <portused state="open" proto="tcp" portid="80"/>
+      <portused state="closed" proto="tcp" portid="113"/>
+      <osmatch name="Linux 3.2 - 3.8" accuracy="87" line="65245">
+        <osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="87">
+          <cpe>cpe:/o:linux:linux_kernel:3</cpe>
+        </osclass>
+      </osmatch>
+      <osmatch name="Grandstream GXV3275 video phone" accuracy="86" line="32125">
+        <osclass type="VoIP phone" vendor="Grandstream" osfamily="embedded" accuracy="86">
+          <cpe>cpe:/h:grandstream:gxv3275</cpe>
+        </osclass>
+      </osmatch>
+      <osmatch name="Linux 3.3" accuracy="86" line="65464">
+        <osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="86">
+          <cpe>cpe:/o:linux:linux_kernel:3.3</cpe>
+        </osclass>
+      </osmatch>
+      <osmatch name="Linux 3.6" accuracy="85" line="65722">
+        <osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="85">
+          <cpe>cpe:/o:linux:linux_kernel:3.6</cpe>
+        </osclass>
+      </osmatch>
+    </os>
+    <uptime seconds="9372638" lastboot="Wed Oct  7 11:14:16 2020"/>
+    <distance value="10"/>
+    <tcpsequence index="261" difficulty="Good luck!" values="44514BD9,198D9BE8,D11ED33,8A016291,CC4648DD,C72D774"/>
+    <ipidsequence class="Broken little-endian incremental" values="AD77,B677,C177,CB77,D577,E077"/>
+    <tcptssequence class="100HZ" values="37DD77AD,37DD77B6,37DD77C1,37DD77CB,37DD77D5,37DD77E0"/>
+    <trace port="113" proto="tcp">
+      <hop ttl="1" ipaddr="192.168.178.1" rtt="3.69" host="fritz.box"/>
+      <hop ttl="3" ipaddr="84.116.197.117" rtt="25.97" host="de-dus01a-rd02-ae-17-0.aorta.net"/>
+      <hop ttl="4" ipaddr="84.116.196.29" rtt="25.49" host="de-fra04d-rc1-ae-19-0.aorta.net"/>
+      <hop ttl="5" ipaddr="84.116.134.217" rtt="17.53" host="de-fra11b-ri1-ae-5-0.aorta.net"/>
+      <hop ttl="6" ipaddr="62.115.42.170" rtt="36.96" host="ffm-b1-link.telia.net"/>
+      <hop ttl="7" ipaddr="62.115.137.128" rtt="24.14" host="ffm-bb1-link.ip.twelve99.net"/>
+      <hop ttl="8" ipaddr="62.115.112.61" rtt="27.24" host="ddf-b2-link.ip.twelve99.net"/>
+      <hop ttl="9" ipaddr="62.115.156.67" rtt="24.15" host="vlan125.ae5.cr2.dus6.plusserver.com"/>
+      <hop ttl="10" ipaddr="213.203.220.200" rtt="22.14" host="covestro-cds.covestro.com"/>
+    </trace>
+    <times srtt="17438" rttvar="2566" to="100000"/>
+  </host>
+  <host starttime="1611434518" endtime="1611434694">
+    <status state="up" reason="syn-ack" reason_ttl="57"/>
+    <address addr="128.65.210.182" addrtype="ipv4"/>
+    <hostnames>
+      <hostname name="www.spiegel.de" type="user"/>
+    </hostnames>
+    <ports>
+      <extraports state="filtered" count="998">
+        <extrareasons reason="no-responses" count="998"/>
+      </extraports>
+      <port protocol="tcp" portid="80">
+        <state state="open" reason="syn-ack" reason_ttl="57"/>
+        <service name="http" servicefp="SF-Port80-TCP:V=7.91%I=7%D=1/23%Time=600C8A23%P=x86_64-apple-darwin19.6.0%r(GetRequest,C1,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/html\r\nContent-Length:\x20100\r\nConnection:\x20close\r\n\r\n&lt;html&gt;&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;hr&gt;ccm&lt;/body&gt;&lt;/html&gt;&quot;)%r(HTTPOptions,C1,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/html\r\nContent-Length:\x20100\r\nConnection:\x20close\r\n\r\n&lt;html&gt;&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;hr&gt;ccm&lt;/body&gt;&lt;/html&gt;&quot;)%r(RTSPRequest,C1,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/html\r\nContent-Length:\x20100\r\nConnection:\x20close\r\n\r\n&lt;html&gt;&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;hr&gt;ccm&lt;/body&gt;&lt;/html&gt;&quot;)%r(FourOhFourRequest,C1,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/html\r\nContent-Length:\x20100\r\nConnection:\x20close\r\n\r\n&lt;html&gt;&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;hr&gt;ccm&lt;/body&gt;&lt;/html&gt;&quot;)%r(GenericLines,C1,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/html\r\nContent-Length:\x20100\r\nConnection:\x20close\r\n\r\n&lt;html&gt;&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;hr&gt;ccm&lt;/body&gt;&lt;/html&gt;&quot;)%r(SIPOptions,C1,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/html\r\nContent-Length:\x20100\r\nConnection:\x20close\r\n\r\n&lt;html&gt;&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;hr&gt;ccm&lt;/body&gt;&lt;/html&gt;&quot;);" method="probed" conf="10"/>
+        <script id="fingerprint-strings" output="&#xa;  FourOhFourRequest, GenericLines, GetRequest, HTTPOptions, RTSPRequest, SIPOptions: &#xa;    HTTP/1.0 400 Bad Request&#xa;    Content-Type: text/html&#xa;    Content-Length: 100&#xa;    Connection: close&#xa;    &lt;html&gt;&lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;hr&gt;ccm&lt;/body&gt;&lt;/html&gt;">
+          <elem key="FourOhFourRequest, GenericLines, GetRequest, HTTPOptions, RTSPRequest, SIPOptions">&#xa;    HTTP/1.0 400 Bad Request&#xa;    Content-Type: text/html&#xa;    Content-Length: 100&#xa;    Connection: close&#xa;    &lt;html&gt;&lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;hr&gt;ccm&lt;/body&gt;&lt;/html&gt;</elem>
+        </script>
+        <script id="http-title" output="Did not follow redirect to https://www.spiegel.de/">
+          <elem key="redirect_url">https://www.spiegel.de/</elem>
+        </script>
+      </port>
+      <port protocol="tcp" portid="443">
+        <state state="open" reason="syn-ack" reason_ttl="57"/>
+        <service name="https" servicefp="SF-Port443-TCP:V=7.91%T=SSL%I=7%D=1/23%Time=600C8A29%P=x86_64-apple-darwin19.6.0%r(GetRequest,C1,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/html\r\nContent-Length:\x20100\r\nConnection:\x20close\r\n\r\n&lt;html&gt;&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;hr&gt;ccm&lt;/body&gt;&lt;/html&gt;&quot;)%r(HTTPOptions,C1,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/html\r\nContent-Length:\x20100\r\nConnection:\x20close\r\n\r\n&lt;html&gt;&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;hr&gt;ccm&lt;/body&gt;&lt;/html&gt;&quot;)%r(FourOhFourRequest,C1,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/html\r\nContent-Length:\x20100\r\nConnection:\x20close\r\n\r\n&lt;html&gt;&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;hr&gt;ccm&lt;/body&gt;&lt;/html&gt;&quot;)%r(GenericLines,C1,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/html\r\nContent-Length:\x20100\r\nConnection:\x20close\r\n\r\n&lt;html&gt;&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;hr&gt;ccm&lt;/body&gt;&lt;/html&gt;&quot;)%r(RTSPRequest,C1,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/html\r\nContent-Length:\x20100\r\nConnection:\x20close\r\n\r\n&lt;html&gt;&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;hr&gt;ccm&lt;/body&gt;&lt;/html&gt;&quot;)%r(SIPOptions,C1,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/html\r\nContent-Length:\x20100\r\nConnection:\x20close\r\n\r\n&lt;html&gt;&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;hr&gt;ccm&lt;/body&gt;&lt;/html&gt;&quot;);" tunnel="ssl" method="probed" conf="10"/>
+        <script id="fingerprint-strings" output="&#xa;  FourOhFourRequest, GenericLines, GetRequest, HTTPOptions, RTSPRequest, SIPOptions: &#xa;    HTTP/1.0 400 Bad Request&#xa;    Content-Type: text/html&#xa;    Content-Length: 100&#xa;    Connection: close&#xa;    &lt;html&gt;&lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;hr&gt;ccm&lt;/body&gt;&lt;/html&gt;">
+          <elem key="FourOhFourRequest, GenericLines, GetRequest, HTTPOptions, RTSPRequest, SIPOptions">&#xa;    HTTP/1.0 400 Bad Request&#xa;    Content-Type: text/html&#xa;    Content-Length: 100&#xa;    Connection: close&#xa;    &lt;html&gt;&lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;hr&gt;ccm&lt;/body&gt;&lt;/html&gt;</elem>
+        </script>
+        <script id="http-robots.txt" output="4 disallowed entries &#xa;/*CR-Dokumentation.pdf$ /gutscheine/suche? &#xa;/gutscheine/*?code=* /gutscheine/*&amp;code=*"/>
+        <script id="http-title" output="Site doesn&apos;t have a title (text/html; charset=utf-8).">
+        </script>
+        <script id="ssl-cert" output="Subject: commonName=www.spiegel.de&#xa;Subject Alternative Name: DNS:www.spiegel.de, DNS:prod.www.spiegel.de, DNS:spiegel.de&#xa;Not valid before: 2020-09-30T00:00:00&#xa;Not valid after:  2021-10-31T23:59:59">
+          <table key="subject">
+            <elem key="commonName">www.spiegel.de</elem>
+          </table>
+          <table key="issuer">
+            <elem key="commonName">Sectigo RSA Domain Validation Secure Server CA</elem>
+            <elem key="countryName">GB</elem>
+            <elem key="localityName">Salford</elem>
+            <elem key="organizationName">Sectigo Limited</elem>
+            <elem key="stateOrProvinceName">Greater Manchester</elem>
+          </table>
+          <table key="pubkey">
+            <elem key="type">rsa</elem>
+            <elem key="bits">2048</elem>
+            <elem key="modulus">BF7437E8F3B58897EA15DB01D26AF38E203F3B81CF4DBCF7ED31F7C9C5AABE2ECCF135E98F21A34374AE1D7FD6953ACBE979DD93FA19A5248CB93D93CF99162C78C5643FC642C81112F45CA7E70DE1BBAC6435766E9F617CDB395F478A862BD67D4B76E4E95CC364BE9203742105AA6863EFA50DB4DFE6B73B56F51C7721C436E017110FD6430BED8A068868331821BB2F133F177830959F520CFAA29CDE8D72695374DA18DEFF9AA7E183CB693FB02078BD80778F986860CB29F44A6B09836A03AF3EA307C3C712BA03B29B50226D3E3118690CF32F74F406FE0BCDF70F36CD381118417E8BFAF810394CD4A157E99D6442CF13988B2E402E438255571DEDBB</elem>
+            <elem key="exponent">65537</elem>
+          </table>
+          <table key="extensions">
+            <table>
+              <elem key="name">X509v3 Authority Key Identifier</elem>
+              <elem key="value">keyid:8D:8C:5E:C4:54:AD:8A:E1:77:E9:9B:F9:9B:05:E1:B8:01:8D:61:E1&#xa;</elem>
+            </table>
+            <table>
+              <elem key="name">X509v3 Subject Key Identifier</elem>
+              <elem key="value">EB:40:66:BC:9D:47:2C:6B:54:5F:D7:5A:BC:CB:01:28:FD:05:6F:67</elem>
+            </table>
+            <table>
+              <elem key="name">X509v3 Key Usage</elem>
+              <elem key="value">Digital Signature, Key Encipherment</elem>
+              <elem key="critical">true</elem>
+            </table>
+            <table>
+              <elem key="name">X509v3 Basic Constraints</elem>
+              <elem key="value">CA:FALSE</elem>
+              <elem key="critical">true</elem>
+            </table>
+            <table>
+              <elem key="name">X509v3 Extended Key Usage</elem>
+              <elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+            </table>
+            <table>
+              <elem key="name">X509v3 Certificate Policies</elem>
+              <elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.7&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.1&#xa;</elem>
+            </table>
+            <table>
+              <elem key="name">Authority Information Access</elem>
+              <elem key="value">CA Issuers - URI:http://crt.sectigo.com/SectigoRSADomainValidationSecureServerCA.crt&#xa;OCSP - URI:http://ocsp.sectigo.com&#xa;</elem>
+            </table>
+            <table>
+              <elem key="name">CT Precertificate SCTs</elem>
+              <elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 7D:3E:F2:F8:8F:FF:88:55:68:24:C2:C0:CA:9E:52:89:&#xa;                79:2B:C5:0E:78:09:7F:2E:6A:97:68:99:7E:22:F0:D7&#xa;    Timestamp : Sep 30 16:42:04.883 2020 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:BB:1D:5E:14:AD:D1:1E:30:70:51:80:&#xa;                ED:22:BF:54:D1:E4:66:45:D7:1E:72:5C:B9:C8:C2:AA:&#xa;                F5:DF:62:33:87:02:21:00:D0:01:29:58:36:B4:F4:ED:&#xa;                1A:6F:47:49:F8:3E:D2:83:E1:07:C0:0B:3C:9F:26:58:&#xa;                21:55:18:81:6D:03:8F:16&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 94:20:BC:1E:8E:D5:8D:6C:88:73:1F:82:8B:22:2C:0D:&#xa;                D1:DA:4D:5E:6C:4F:94:3D:61:DB:4E:2F:58:4D:A2:C2&#xa;    Timestamp : Sep 30 16:42:04.922 2020 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:8B:AF:D0:66:62:6E:73:E3:EE:D1:56:&#xa;                6B:45:60:1C:7D:52:4A:82:2A:E5:95:76:C0:92:33:46:&#xa;                C6:98:9C:0A:FF:02:20:0F:2E:68:1A:E9:2D:91:C8:A3:&#xa;                FD:F7:B7:59:20:A5:D3:DE:F0:28:65:6A:D0:C0:58:1D:&#xa;                7E:1E:B8:37:B2:DC:BD</elem>
+            </table>
+            <table>
+              <elem key="name">X509v3 Subject Alternative Name</elem>
+              <elem key="value">DNS:www.spiegel.de, DNS:prod.www.spiegel.de, DNS:spiegel.de</elem>
+            </table>
+          </table>
+          <elem key="sig_algo">sha256WithRSAEncryption</elem>
+          <table key="validity">
+            <elem key="notBefore">2020-09-30T00:00:00</elem>
+            <elem key="notAfter">2021-10-31T23:59:59</elem>
+          </table>
+          <elem key="md5">c85ffd45dbfa92ca4ddcded19c44b329</elem>
+          <elem key="sha1">055584e8d82af1ea4394a2fa760875bfbe013c18</elem>
+          <elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFzjCCBLagAwIBAgIRALUOu/QnCNfkC4EVb1TmmbwwDQYJKoZIhvcNAQELBQAw&#xa;gY8xCzAJBgNVBAYTAkdCMRswGQYDVQQIExJHcmVhdGVyIE1hbmNoZXN0ZXIxEDAO&#xa;BgNVBAcTB1NhbGZvcmQxGDAWBgNVBAoTD1NlY3RpZ28gTGltaXRlZDE3MDUGA1UE&#xa;AxMuU2VjdGlnbyBSU0EgRG9tYWluIFZhbGlkYXRpb24gU2VjdXJlIFNlcnZlciBD&#xa;QTAeFw0yMDA5MzAwMDAwMDBaFw0yMTEwMzEyMzU5NTlaMBkxFzAVBgNVBAMTDnd3&#xa;dy5zcGllZ2VsLmRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv3Q3&#xa;6PO1iJfqFdsB0mrzjiA/O4HPTbz37TH3ycWqvi7M8TXpjyGjQ3SuHX/WlTrL6Xnd&#xa;k/oZpSSMuT2Tz5kWLHjFZD/GQsgREvRcp+cN4busZDV2bp9hfNs5X0eKhivWfUt2&#xa;5Olcw2S+kgN0IQWqaGPvpQ203+a3O1b1HHchxDbgFxEP1kML7YoGiGgzGCG7LxM/&#xa;F3gwlZ9SDPqinN6NcmlTdNoY3v+ap+GDy2k/sCB4vYB3j5hoYMsp9EprCYNqA68+&#xa;owfDxxK6A7KbUCJtPjEYaQzzL3T0Bv4LzfcPNs04ERhBfov6+BA5TNShV+mdZELP&#xa;E5iLLkAuQ4JVVx3tuwIDAQABo4ICmDCCApQwHwYDVR0jBBgwFoAUjYxexFStiuF3&#xa;6Zv5mwXhuAGNYeEwHQYDVR0OBBYEFOtAZrydRyxrVF/XWrzLASj9BW9nMA4GA1Ud&#xa;DwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggr&#xa;BgEFBQcDAjBJBgNVHSAEQjBAMDQGCysGAQQBsjEBAgIHMCUwIwYIKwYBBQUHAgEW&#xa;F2h0dHBzOi8vc2VjdGlnby5jb20vQ1BTMAgGBmeBDAECATCBhAYIKwYBBQUHAQEE&#xa;eDB2ME8GCCsGAQUFBzAChkNodHRwOi8vY3J0LnNlY3RpZ28uY29tL1NlY3RpZ29S&#xa;U0FEb21haW5WYWxpZGF0aW9uU2VjdXJlU2VydmVyQ0EuY3J0MCMGCCsGAQUFBzAB&#xa;hhdodHRwOi8vb2NzcC5zZWN0aWdvLmNvbTCCAQUGCisGAQQB1nkCBAIEgfYEgfMA&#xa;8QB3AH0+8viP/4hVaCTCwMqeUol5K8UOeAl/LmqXaJl+IvDXAAABdN/kctMAAAQD&#xa;AEgwRgIhALsdXhSt0R4wcFGA7SK/VNHkZkXXHnJcucjCqvXfYjOHAiEA0AEpWDa0&#xa;9O0ab0dJ+D7Sg+EHwAs8nyZYIVUYgW0DjxYAdgCUILwejtWNbIhzH4KLIiwN0dpN&#xa;XmxPlD1h204vWE2iwgAAAXTf5HL6AAAEAwBHMEUCIQCLr9BmYm5z4+7RVmtFYBx9&#xa;UkqCKuWVdsCSM0bGmJwK/wIgDy5oGuktkcij/fe3WSCl097wKGVq0MBYHX4euDey&#xa;3L0wOgYDVR0RBDMwMYIOd3d3LnNwaWVnZWwuZGWCE3Byb2Qud3d3LnNwaWVnZWwu&#xa;ZGWCCnNwaWVnZWwuZGUwDQYJKoZIhvcNAQELBQADggEBAC8UB12neePei5zPC0Fq&#xa;VbtFawPjdskVyjh064G8TVUHj9aSUkJg9HrXsl3H98HcWF2EuqMjI7re32gcEbh/&#xa;hehlb3omdpn79tyPAj0QTS5DEzVO6vcvbifqqIm4FNm+JMPZd5FeA27urtd46yz2&#xa;IiukpAJz6KjSXxV1BiQYoo0B3cOvi54YXjVK9NYehsnf8KzxhKev0/9q82QBbeen&#xa;2loG2KL7ZIcjIfXPJbJw30bMJ+0IPqupP7tOKcupqeWSN+jQzG894rTZ+Pbq6QMy&#xa;goi1Tv4yBBC3h6mXnvpdUsQX4K/Sr2R2QyQND8OYAZRAYGGFkQlW5UdoT8OmepY/&#xa;BRE=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+        </script>
+        <script id="ssl-date" output="TLS randomness does not represent time">
+        </script>
+      </port>
+    </ports>
+    <os>
+      <portused state="open" proto="tcp" portid="80"/>
+      <osmatch name="Linux 2.6.18" accuracy="92" line="49408">
+        <osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="92">
+          <cpe>cpe:/o:linux:linux_kernel:2.6.18</cpe>
+        </osclass>
+      </osmatch>
+      <osmatch name="Linux 3.2.0" accuracy="89" line="65337">
+        <osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="89">
+          <cpe>cpe:/o:linux:linux_kernel:3.2.0</cpe>
+        </osclass>
+      </osmatch>
+      <osmatch name="Tomato 1.27 - 1.28 (Linux 2.4.20)" accuracy="88" line="46893">
+        <osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="88">
+          <cpe>cpe:/o:linux:linux_kernel:2.4.20</cpe>
+        </osclass>
+      </osmatch>
+      <osmatch name="Crestron XPanel control system" accuracy="86" line="19546">
+        <osclass type="specialized" vendor="Crestron" osfamily="2-Series" accuracy="86">
+          <cpe>cpe:/o:crestron:2_series</cpe>
+        </osclass>
+      </osmatch>
+      <osmatch name="MikroTik RouterOS 6.15 (Linux 3.3.5)" accuracy="86" line="85787">
+        <osclass type="router" vendor="MikroTik" osfamily="RouterOS" osgen="6.X" accuracy="86">
+          <cpe>cpe:/o:mikrotik:routeros:6.15</cpe>
+        </osclass>
+      </osmatch>
+    </os>
+    <uptime seconds="414253" lastboot="Tue Jan 19 02:40:41 2021"/>
+    <distance value="9"/>
+    <tcpsequence index="254" difficulty="Good luck!" values="F71B6B29,4EBFE164,F1B72F3A,C75EFCD6,7159C48A,366B20FC"/>
+    <ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+    <tcptssequence class="1000HZ" values="18B091BD,18B09223,18B09289,18B092F4,18B09357,18B093C1"/>
+    <trace port="443" proto="tcp">
+      <hop ttl="1" ipaddr="192.168.178.1" rtt="3.69" host="fritz.box"/>
+      <hop ttl="3" ipaddr="84.116.197.117" rtt="25.97" host="de-dus01a-rd02-ae-17-0.aorta.net"/>
+      <hop ttl="4" ipaddr="84.116.196.29" rtt="25.49" host="de-fra04d-rc1-ae-19-0.aorta.net"/>
+      <hop ttl="5" ipaddr="84.116.130.102" rtt="18.66" host="de-fra02a-ri1-ae-1-0.aorta.net"/>
+      <hop ttl="6" ipaddr="213.46.177.254" rtt="24.12"/>
+      <hop ttl="8" ipaddr="80.95.144.117" rtt="25.40"/>
+      <hop ttl="9" ipaddr="128.65.210.182" rtt="17.01"/>
+    </trace>
+    <times srtt="21608" rttvar="2162" to="100000"/>
+  </host>
+  <runstats>
+    <finished time="1611434694" timestr="Sat Jan 23 21:44:54 2021" summary="Nmap done at Sat Jan 23 21:44:54 2021; 2 IP addresses (2 hosts up) scanned in 177.00 seconds" elapsed="177.00" exit="success"/>
+    <hosts up="2" down="0" total="2"/>
+  </runstats>
+</nmaprun>
