@@ -24,9 +24,14 @@ type NmapRun struct {
 	Host     []Host `xml:"host"`
 }
 
+type Elem struct {
+	Key  string `xml:"key,attr"`
+	Data string `xml:",chardata"`
+}
+
 type Script struct {
-	Id   string   `xml:"id,attr"`
-	Elem []string `xml:"elem"`
+	Id   string `xml:"id,attr"`
+	Elem []Elem `xml:"elem"`
 }
 
 type Port struct {
@@ -38,6 +43,8 @@ type Port struct {
 	StateDetail string
 	Reason      string
 	Script      []Script `xml:"script"`
+	Service     string   `xml:"service"` // e.g. IIS version x.y
+	RedirectURL string   // if it is a web service and a redirect was found
 }
 
 type State struct {
@@ -160,7 +167,7 @@ func ParseXmlFile(filename string, persistance bool) (NmapRun, bool) {
 		}
 
 		// store nmaprun
-		result := dbGorm.Create(&nmaprun)
+		//result := dbGorm.Create(&nmaprun)
 
 		nmaprunRun := nmaprun.Start // start start seconds as identifier
 
@@ -170,7 +177,7 @@ func ParseXmlFile(filename string, persistance bool) (NmapRun, bool) {
 
 			host.NmapRunID = nmaprunRun
 			host.Hostname = host.Hostnames.HostName[0].Name
-			dbGorm.Create(&host)
+			//dbGorm.Create(&host)
 
 			for j := 0; j < len(host.Ports.Ports); j++ {
 
@@ -178,13 +185,13 @@ func ParseXmlFile(filename string, persistance bool) (NmapRun, bool) {
 				port.Hostname = host.Hostname
 				port.NmapRunID = nmaprunRun
 				port.StateDetail = port.State.State
-				dbGorm.Create(&port)
+				//dbGorm.Create(&port)
 
 			}
 
 		}
 
-		fmt.Println("Done: " + string(result.RowsAffected))
+		fmt.Println("Done: ")
 
 	}
 
