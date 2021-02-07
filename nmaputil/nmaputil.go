@@ -10,6 +10,7 @@ import (
 	"log"
 	"os"
 	"os/exec"
+	"strings"
 	"time"
 )
 
@@ -41,16 +42,19 @@ type Service struct {
 }
 
 type Port struct {
-	NmapRunID   string
-	Hostname    string
-	Protocol    string `xml:"protocol,attr"`
-	Portid      string `xml:"portid,attr"`
-	State       State  `xml:"state"`
-	StateDetail string
-	Reason      string
-	Script      []Script `xml:"script"`
-	Service     Service  `xml:"service"` // e.g. IIS version x.y
-	RedirectURL string   // if it is a web service and a redirect was found
+	NmapRunID      string
+	Hostname       string
+	Protocol       string `xml:"protocol,attr"`
+	Portid         string `xml:"portid,attr"`
+	State          State  `xml:"state"`
+	StateDetail    string
+	Reason         string
+	Script         []Script `xml:"script"`
+	Service        Service  `xml:"service"` // e.g. IIS version x.y
+	RedirectURL    string   // if it is a web service and a redirect was found
+	ServiceName    string
+	ServiceProduct string
+	ServiceVersion string
 }
 
 type State struct {
@@ -173,7 +177,7 @@ func ParseXmlFile(filename string, persistance bool) (NmapRun, bool) {
 		}
 
 		// store nmaprun
-		//result := dbGorm.Create(&nmaprun)
+		dbGorm.Create(&nmaprun)
 
 		nmaprunRun := nmaprun.Start // start start seconds as identifier
 
@@ -191,6 +195,37 @@ func ParseXmlFile(filename string, persistance bool) (NmapRun, bool) {
 				port.Hostname = host.Hostname
 				port.NmapRunID = nmaprunRun
 				port.StateDetail = port.State.State
+				port.ServiceName = port.Service.Name
+				port.ServiceProduct = port.Service.Product
+				port.ServiceVersion = port.Service.Version
+
+				httpserverheader := false
+
+				for k := 0; k < len(port.Script); k++ {
+
+					script := port.Script[k]
+
+					if strings.Contains(script.Id, "http-server-header") {
+						httpserverheader = true
+					} else {
+						httpserverheader = false
+					}
+
+					for l := 0; l < len(script.Elem); l++ {
+
+						element := script.Elem[l]
+						if strings.Contains(element.Key, "redirect") {
+							port.RedirectURL = element.Data
+						}
+
+						if httpserverheader {
+							port.ServiceProduct = port.ServiceProduct + "/" + element.Data
+						}
+
+					}
+
+				}
+
 				dbGorm.Create(&port)
 
 			} // iterate through ports
