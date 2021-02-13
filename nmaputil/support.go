@@ -18,7 +18,7 @@ func contains(s []string, e string) bool {
 }
 
 /**
-collect targets from a given file (1 colum prefix, 2. column domain name) and writes it to a second file
+collect targets from a given Excel file (1 colum prefix, 2. column domain name) and writes it to a second plaintext file
 */
 func CollectTargets(source string, destination string) bool {
 
