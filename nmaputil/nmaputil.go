@@ -4,7 +4,6 @@ import (
 	"encoding/xml"
 	"fmt"
 	_ "github.com/go-sql-driver/mysql"
-	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm"
 	"io/ioutil"
 	"log"
@@ -14,103 +13,10 @@ import (
 	"time"
 )
 
-var dbGorm *gorm.DB
-
-type NmapRun struct {
-	ID       uint   `gorm:"primary_key"`
-	Nmaprun  string `xml:"nmaprun"`
-	Scanner  string `xml:"scanner,attr"`
-	Start    string `xml:"start,attr"`
-	Startstr string `xml:"startstr,attr"`
-	Host     []Host `xml:"host"`
-}
-
-type Elem struct {
-	Key  string `xml:"key,attr"`
-	Data string `xml:",chardata"`
-}
-
-type Script struct {
-	Id   string `xml:"id,attr"`
-	Elem []Elem `xml:"elem"`
-}
-
-type Service struct {
-	Name    string `xml:"name,attr"`
-	Product string `xml:"product,attr"`
-	Version string `xml:"version,attr"`
-}
-
-type Port struct {
-	NmapRunID      string
-	Hostname       string
-	Protocol       string `xml:"protocol,attr"`
-	Portid         string `xml:"portid,attr"`
-	State          State  `xml:"state"`
-	StateDetail    string
-	Reason         string
-	Script         []Script `xml:"script"`
-	Service        Service  `xml:"service"` // e.g. IIS version x.y
-	RedirectURL    string   // if it is a web service and a redirect was found
-	ServiceName    string
-	ServiceProduct string
-	ServiceVersion string
-}
-
-type State struct {
-	NmapRunID string
-	State     string `xml:"state,attr"`
-	Reason    string `xml:"reason,attr"`
-}
-
-type Host struct {
-	NmapRunID string
-	Ports     Ports     `xml:"ports"`
-	Hostnames HostNames `xml:"hostnames"`
-	Hostname  string
-}
-
-type HostName struct {
-	NmapRunID string
-	Name      string `xml:"name,attr"`
-	Type      string `xml:"type,attr"`
-}
-type HostNames struct {
-	NmapRunID string
-	HostName  []HostName `xml:"hostname"`
-}
-
-type Ports struct {
-	NmapRunID string
-	Hostname  string
-	XMLName   xml.Name `xml:"ports"`
-	Ports     []Port   `xml:"port"`
-}
-
-func initDB() bool {
-	var err error
-	dataSourceName := "nmaputil:GHGHG%%%DFDDDDDffff@tcp(127.0.0.1:3306)/nmaputil?parseTime=True"
-	dbGorm, err = gorm.Open("mysql", dataSourceName)
-
-	if err != nil {
-		fmt.Println(err)
-		panic("failed to connect database")
-		return false
-	}
-
-	// Migration to create tables for NmapRun schema
-	dbGorm.AutoMigrate(&NmapRun{})
-	dbGorm.AutoMigrate(&Host{})
-	dbGorm.AutoMigrate(&Port{})
-
-	return true
-
-} // initDB
-
 /*
 scan a given target with nmap (see www.insecure.org)
 */
-func ScanTarget(target string, admin bool, persistance bool) (NmapRun, bool) {
+func ScanTarget(target string, admin bool, persistance bool, database string) (NmapRun, bool) {
 
 	nmaprun := NmapRun{}
 
@@ -145,10 +51,10 @@ func ScanTarget(target string, admin bool, persistance bool) (NmapRun, bool) {
 
 	print(stdout)
 
-	return ParseXmlFile(file.Name(), persistance)
+	return ParseXmlFile(file.Name(), persistance, database)
 }
 
-func ParseXmlFile(filename string, persistance bool) (NmapRun, bool) {
+func ParseXmlFile(filename string, persistance bool, database string) (NmapRun, bool) {
 
 	nmaprun := NmapRun{}
 	currentTime := time.Now()
@@ -169,7 +75,7 @@ func ParseXmlFile(filename string, persistance bool) (NmapRun, bool) {
 
 	if persistance {
 
-		err := initDB()
+		err := initDB(database)
 
 		if !err {
 			fmt.Println(currentTime.Format("2006-01-02 15:04:05") + ": " + " Database GORM setup failed")
@@ -177,6 +83,7 @@ func ParseXmlFile(filename string, persistance bool) (NmapRun, bool) {
 		}
 
 		// store nmaprun
+		nmaprun.ID = nmaprun.Start
 		dbGorm.Create(&nmaprun)
 
 		nmaprunRun := nmaprun.Start // start start seconds as identifier
