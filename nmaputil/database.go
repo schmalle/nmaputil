@@ -15,7 +15,7 @@ func initDB(database string) bool {
 
 	if err != nil {
 		fmt.Println(err)
-		panic("failed to connect database")
+		panic("failed to connect database " + database)
 		return false
 	}
 
@@ -27,3 +27,17 @@ func initDB(database string) bool {
 	return true
 
 } // initDB
+
+func GetNumberOfHosts() int64 {
+
+	// Get all records
+	result := dbGorm.Find(&Host{})
+
+	if result.Error != nil {
+		return 0
+	}
+
+	return result.RowsAffected
+}
+
+//db.Where("name = ? AND age >= ?", "jinzhu", "22").Find(&users)
